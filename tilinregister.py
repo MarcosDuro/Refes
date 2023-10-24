@@ -44,7 +44,7 @@ def handle_reference_command(message):
     user_id = message.from_user.id
 
     if str(user_id) not in registered_users:
-        bot.send_message(message.chat.id, '<b>Registrate para pider usar este comando, Utiliza</b> <code>/register</b>', parse_mode='HTML')
+        bot.send_message(message.chat.id, '<b>Registrate para pider usar este comando, Utiliza</b> <code>/register</code>', parse_mode='HTML')
         return
 
     text = "<code>Envía una sola foto con el texto que deseas poner.</code>"
